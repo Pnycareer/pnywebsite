@@ -1,0 +1,24 @@
+# *
+User-agent: *
+Allow: /
+
+# Directories
+Disallow: /admin786/
+Disallow: /exam/
+Disallow: /admin786/assets/
+Disallow: /admin786/upload/
+
+# Disallowed pages
+Disallow: /gallery
+Disallow: /event-detail
+Disallow: /event
+Disallow: /gallery-image
+
+# Disallow indexing of URLs with specific query parameters
+Disallow: /?_rsc=*
+
+# Host
+Host: https://www.pnytrainings.com
+
+# Sitemaps
+Sitemap: https://www.pnytrainings.com/sitemap.xml
