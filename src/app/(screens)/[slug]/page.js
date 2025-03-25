@@ -16,8 +16,9 @@ export async function generateStaticParams() {
 }
 
 export default async function Home({ params }) {
+    const {slug} = await params
     const metadata = await fetch(
-        `https://www.admin777.pny-trainings.com/api/course/${params.slug}`,
+        `https://www.admin777.pny-trainings.com/api/course/${slug}`,
         {
             cache: "no-cache",
         }
@@ -46,7 +47,7 @@ export default async function Home({ params }) {
                 <link rel="canonical" href={metadata.canonicalUrl} />
             )}
 
-            <CourseDetails params={params} />
+            <CourseDetails params={{slug}} />
         </>
     );
 }
