@@ -16,8 +16,9 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }) {
+  const {slug} = await params
   const metadata = await fetch(
-    `https://www.admin777.pny-trainings.com/api/category/${params.slug}`,
+    `https://www.admin777.pny-trainings.com/api/category/${slug}`,
     {
       cache: "no-cache",
     }
@@ -39,7 +40,7 @@ export default async function Page({ params }) {
     <>
       <title>{metadata.metatitle}</title>
       <meta name="description" content={metadata.metadescription} />
-      <ClientCourses params={params} />
+      <ClientCourses params={{slug}} />
     </>
   );
 }

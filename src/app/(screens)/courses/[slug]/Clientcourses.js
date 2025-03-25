@@ -1,13 +1,15 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
-import gif from '../../../assets/image/gif.gif';
-import instructoricon from '../../../assets/image/Instructoricon.png';
+import gif from "../../../assets/image/gif.gif";
+import instructoricon from "../../../assets/image/Instructoricon.png";
 import Link from "next/link";
 import Image from "next/image";
 
 const Clientcourses = ({ params }) => {
   const slug = params.slug;
+
+  console.log(slug, "rah");
   const [category, setCategory] = useState(null);
   const [courses, setCourses] = useState([]);
   const [instructors, setInstructors] = useState([]);
@@ -43,7 +45,6 @@ const Clientcourses = ({ params }) => {
     };
 
     fetchData();
-
   }, [slug]);
 
   // useEffect(() => {
@@ -67,7 +68,15 @@ const Clientcourses = ({ params }) => {
       <div className="loader-wrapper">
         <div className="loader-overlay"></div>
         <div className="loaderContainer">
-          <Image className="w-52 h-52" src={gif} alt="Loading..." loading="lazy" width={208} height={208} />
+          <Image
+            className="w-52 h-52"
+            src={gif}
+            alt="Loading..."
+            loading="lazy"
+            width={208}
+            height={208}
+            unoptimized={true}
+          />
         </div>
       </div>
     );
@@ -118,6 +127,7 @@ const Clientcourses = ({ params }) => {
                             className="object-cover w-full h-full"
                             width={640}
                             height={360}
+                            unoptimized={true}
                           />
                         </div>
                       </Link>
@@ -148,7 +158,10 @@ const Clientcourses = ({ params }) => {
                 instructors.slice(0, 8).map((x, index) => (
                   <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
                     <div className="bg-white  rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all hover:-translate-y-2">
-                      <Link href='' className="block relative h-40 rounded overflow-hidden">
+                      <Link
+                        href=""
+                        className="block relative h-40 rounded overflow-hidden"
+                      >
                         <Image
                           alt="instructor"
                           loading="lazy"
@@ -156,6 +169,7 @@ const Clientcourses = ({ params }) => {
                           src={instructoricon}
                           width={128}
                           height={128}
+                          unoptimized={true}
                         />
                       </Link>
                       <div className="p-6">

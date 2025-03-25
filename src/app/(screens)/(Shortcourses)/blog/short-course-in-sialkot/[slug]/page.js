@@ -15,6 +15,7 @@ export async function generateStaticParams() {
 
 // Page component
 export default async function Sialkotblogpage({ params }) {
+    const {slug} = await params
     const metadata = await fetch(
         `https://www.admin777.pny-trainings.com/api/shortcourse/short-course-in-sialkot`,
         {
@@ -23,7 +24,7 @@ export default async function Sialkotblogpage({ params }) {
     )
         .then((response) => response.json())
         .then((data) => {
-            const course = data.courses.find(course => course.url_slug === params.slug);
+            const course = data.courses.find(course => course.url_slug === slug.slug);
             return {
                 metatitle: course ? course.meta_title : 'Default Title',
                 metadescription: course ? course.meta_description : 'Default Description',
@@ -46,7 +47,7 @@ export default async function Sialkotblogpage({ params }) {
             {metadata.canonicalUrl && (
                 <link rel="canonical" href={metadata.canonicalUrl} />
             )}
-            <Sialkotdetails params={params} />
+            <Sialkotdetails params={{slug}} />
         </>
     );
 }

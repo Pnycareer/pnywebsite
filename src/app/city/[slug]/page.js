@@ -27,6 +27,7 @@ export function generateStaticParams() {
 
 // Page component
 export default async function Page({ params }) {
+    const {slug} = await params
     let metadata = {
         metatitle: "",
         metadescription: "",
@@ -35,7 +36,7 @@ export default async function Page({ params }) {
     try {
         const response = await fetch(
 
-            `https:https://www.admin777.pny-trainings.com/api/city/${params.slug}`,
+            `https:https://www.admin777.pny-trainings.com/api/city/${slug}`,
 
             {
                 cache: "no-cache",
@@ -61,7 +62,7 @@ export default async function Page({ params }) {
                 rel="canonical"
                 href={`https://pnytrainings.com/city/${params.slug}`}
             />
-            <Clientcity params={params} />
+            <Clientcity params={{slug}} />
         </>
     )
 }
