@@ -59,7 +59,7 @@ const Header = () => {
                                     Kids Courses
                                 </Link>
                                 <Link
-                                    href="https://www.joinpnypink.com/"
+                                    href=" "
                                     target="_blank"
                                     className="py-5 px-1 hover:underline"
                                 >
