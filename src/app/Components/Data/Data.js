@@ -22,8 +22,8 @@ export const contactus = [
   {
     id: 1,
     image: arfa,
-    title: "Arfa Tower",
-    description: "1st Floor 256 / A, Block R2 Near Shaukat Khanam Hospital, next to Standard Chartered, Lahore",
+    title: "Arfa Karim Tower",
+    description: "Office # 1, Level # 14, Arfa Software Technology Park, Ferozepur Road Lahore, Pakistan",
     phone: " 0304-1111774",
     phone1: "0309-7779401",
     Map: "https://maps.app.goo.gl/WoT7KdNiFN7kNJEm9",
