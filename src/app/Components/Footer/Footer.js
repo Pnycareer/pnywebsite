@@ -7,6 +7,7 @@ import johartown from "../../assets/image/Jahor town.png";
 import multan from "../../assets/image/Multan.png";
 import rawal from "../../assets/image/rawalpindi.png";
 import shad from "../../assets/image/shad.png";
+import uae from "../../assets/image/uae.png";
 import pnylogonew from "../../assets/image/PNY Trainings logo.png";
 import saudf from "../../assets/image/saudiaf.png";
 import sgdf from "../../assets/image/sgdf.png";
@@ -273,7 +274,7 @@ const Footer = () => {
               ullah chowk Sargodha
             </p>
           </div>
-          <div>
+          {/* <div>
             <Image
               className="rounded-full mb-2"
               src={saudf}
@@ -285,12 +286,11 @@ const Footer = () => {
               Office No. 7, 1st Floor, ALJMAZ Building Prince Sultan Bin
               Abdulaziz Rd, Above Dunkin Donuts Al Olaya, Riyadh 12221
             </p>
-          </div>
+          </div> */}
           <div>
             <Image
-              unoptimized={true}
-              className="rounded-full mb-2"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7Bw5CMx-VbqxUjP6451eAD7bnetiNw8KA&s"
+              className="rounded-full h-16 w-16 mb-2"
+              src={uae}
               alt="Rawalpindi"
               width={60}
               height={100}
