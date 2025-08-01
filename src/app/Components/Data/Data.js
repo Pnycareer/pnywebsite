@@ -7,6 +7,7 @@ import Shad from "../../assets/image/shadarac.webp";
 import uae from "../../assets/image/uae.png";
 import sargodha from "../../assets/image/sargodha.jpg";
 import saudia from "../../assets/image/saudia.jpg";
+import pny from "../../assets/image/PNY Trainings logo.png";
 
 import a1 from "../../assets/About us icons/1.png";
 import a2 from "../../assets/About us icons/2.png";
@@ -94,8 +95,19 @@ export const contactus = [
   },
   {
     id: 8,
+    image: pny,
+    title: "Mardan Branch",
+    description:
+      "Near Ali khan flour Mills , Malakand Road Shergarh District Mardan",
+    // phone: "0578-858131",
+    // phone1: "0309-7774685",
+    // Map: "https://maps.app.goo.gl/hdd4wgvG6pcdDjbL9",
+    // link: "https://www.youtube.com/watch?v=QVo6WNbZ3-o"
+  },
+  {
+    id: 8,
     image: saudia,
-    title: "Saudi branch",
+    title: "Saudi Branch",
     description:
       "Office No. 7, 1st Floor, ALJMAZ Building Prince Sultan Bin Abdulaziz Rd, Above Dunkin Donuts Al Olaya, Riyadh 12221",
     phone: "0578-858131",

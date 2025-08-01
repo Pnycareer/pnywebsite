@@ -49,7 +49,7 @@ const Header = () => {
                                     target="_blank"
                                     className="py-5 px-1 hover:underline"
                                 >
-                                    Amazon Services
+                                    Gaming Studio
                                 </Link>
                                 <Link
                                     href="https://www.pnygenius.com/"
@@ -136,7 +136,7 @@ const Header = () => {
                         className="block py-2 px-4 text-sm hover:bg-gray-700"
                         onClick={toggleMobileMenu}
                     >
-                        Amazon Services
+                        Gaming Studio
                     </Link>
                     <Link
                         href="https://www.pnygenius.com/"
