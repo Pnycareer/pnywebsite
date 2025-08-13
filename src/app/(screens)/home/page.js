@@ -31,7 +31,7 @@ import { ownersdata } from "../../Components/Data/Data";
 import frame from "../../assets/image/Frame 624.png";
 import frame2 from "../../assets/image/Frame 61.png";
 import TawkToChatbot from "@/app/Components/Chatbot/Talktobot";
-import match from '../../assets/Gallery/match.jpg'
+import match from "../../assets/Gallery/match.jpg";
 
 const ClientComponent = () => {
   const [data, setData] = useState([]);
@@ -113,7 +113,7 @@ const ClientComponent = () => {
           />
         </div>
         {/* Section-1 */}
-        <div className="container mx-auto p-4 flex md:flex-col flex-col lg:flex-row xl:flex-row 2xl:flex-row md:items-center bg-white text-black">
+        {/* <div className="container mx-auto p-4 flex md:flex-col flex-col lg:flex-row xl:flex-row 2xl:flex-row md:items-center bg-white text-black">
           <div className=" flex-1 max-sm:order-1 px-2  max-sm:text-center md:text-center lg:text-center xl:text-start 2xl:text-start max-sm:p-3">
             <h1
               style={{ animation: "riseUp 2s ease-out forwards" }}
@@ -132,10 +132,36 @@ const ClientComponent = () => {
               Practical Skills that Open Doors to Lucrative Opportunities
             </p>
           </div>
+        </div> */}
+
+        {/* pakistan 14 aug  */}
+
+        <div className="container mx-auto p-4 flex md:flex-col flex-col lg:flex-row xl:flex-row 2xl:flex-row md:items-center bg-white text-black">
+          <div className="flex-1 max-sm:order-1 px-2 max-sm:text-center md:text-center lg:text-center xl:text-start 2xl:text-start max-sm:p-3">
+            <h1
+              style={{ animation: "riseUp 2s ease-out forwards" }}
+              className="text-xl text-center font-bold md:text-7xl max-sm:text-[36px]"
+            >
+              <span className="text-[#006600]">PNY</span> Trainings
+            </h1>
+
+            <p className="mt-2 md:text-[48px] w-[400px] text-[20px] md:w-auto max-sm:w-auto font-semibold text-center">
+              Celebrating{" "}
+              <span className="text-[#006600]">
+                78<sup>th</sup> Independence Day
+              </span>{" "}
+              🇵🇰
+            </p>
+
+            <p className="mt-2 text-center text-sm md:text-base md:w-auto w-[400px] max-sm:w-auto">
+              Learn from Pakistan's{" "}
+              <span className="text-[#006600] font-semibold">No.1</span> IT
+              Institute. Gain certified, money-making tech skills. Build your
+              future — build the nation.
+            </p>
+          </div>
         </div>
-        
-      
-        
+
         <section
           className="bg-blue-100"
           style={{
@@ -144,7 +170,7 @@ const ClientComponent = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="grid justify-center lg:py-28 md:py-20 py-5">
+          {/* <div className="grid justify-center lg:py-28 md:py-20 py-5">
             <div className="lg:text-5xl w-full lg:w-[778px] px-5 font-bold text-center text-black">
               Admissions are open for the fresh batch. Let’s grow together!
             </div>
@@ -158,6 +184,39 @@ const ClientComponent = () => {
                   Join us now!
                 </button>
               </Link>
+            </div>
+          </div> */}
+
+          {/* 14 aug */}
+          <div className="relative w-full overflow-hidden bg-whit">
+            {/* 🇵🇰 Background Video */}
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover opacity-50 z-0"
+            >
+              <source src="/videos/flag.mp4" type="video/mp4" />
+            </video>
+
+            {/* Content Layer */}
+            <div className="relative z-10 grid justify-center lg:py-28 md:py-20 py-5">
+              <div className="lg:text-5xl w-full lg:w-[778px] px-5 font-bold text-center text-black">
+                Admissions are open for the fresh batch. Let’s grow together!
+              </div>
+
+              <div className="text-center py-5">
+                <Link
+                  href="https://lms.pnytraining.com/"
+                  target="_blank"
+                  aria-label="Join our new batch now"
+                >
+                  <button className="bg-[#006600] lg:w-48 h-14 text-white rounded w-36 hover:bg-green-800 transition-colors">
+                    Join us now!
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
