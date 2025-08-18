@@ -5,8 +5,6 @@ export function middleware(req) {
   const { nextUrl: url } = req;
   const pathname = url.pathname;
 
-
-
   // 1. Return 410 for non-existent paths
   if (nonExistentPaths.includes(pathname)) {
     return new NextResponse("Page has been permanently removed.", {
